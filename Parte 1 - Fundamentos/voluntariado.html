@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voluntariado - Nalu Project</title>
+</head>
+<body>
+  <header>
+    <h1>Seja Voluntário</h1>
+  </header>
+
+  <main>
+    <form>
+      <fieldset>
+        <legend>Cadastro de Voluntário</legend>
+        <label>Nome: <input type="text" required></label><br>
+        <label>E-mail: <input type="email" required></label><br>
+        <label>CPF: <input type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00"></label><br>
+        <label>Telefone: <input type="tel" placeholder="(00) 00000-0000"></label><br>
+        <label>Disponibilidade:
+          <select>
+            <option>Fins de semana</option>
+            <option>Durante a semana</option>
+          </select>
+        </label><br>
+        <label>Habilidades:
+          <textarea></textarea>
+        </label><br>
+        <button type="submit">Enviar</button>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Nalu Project</p>
+  </footer>
+</body>
+</html>
+
