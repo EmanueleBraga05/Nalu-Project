@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nalu Project – A Voz do Oceano</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/formulario.js"></script>
+
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo-container">
+  <img src="assets\Imagens\logo.png" alt="Logo Nalu Project" class="logo">
+  <h1 class="titulo-site">Nalu Project</h1>
+</div>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="voluntariado.html">Voluntariado</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li></li><a href="transparencia.html">Transparência</a></li>
+        <li><a href="contato.html">Contato</a></li><li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção principal -->
+  <section class="hero">
+    <h2>O Oceano Fala. Estamos Ouvindo?</h2>
+    <p>O Nalu Project conecta pessoas e ações que protegem a vida marinha e inspiram sustentabilidade.</p>
+    <a href="projetos.html" class="btn">Conheça nossos projetos</a>
+  </section>
+
+  <!-- Seção de destaque -->
+  <main>
+    <section class="cards">
+      <div class="card">
+        <img src="assets\Imagens\04_tecnologia_retira_100_toneladas_de_lixo_do_oceano_padrao.jpg" alt="Projetos sociais">
+        <h3>Projetos Sociais</h3>
+        <p>Conheça as iniciativas que estão transformando comunidades costeiras.</p>
+      </div>
+
+      <div class="card">
+        <img src="assets\Imagens\mergulhadores-tiram-lixo-mar.jpg" alt="Voluntariado">
+        <h3>Voluntariado</h3>
+        <p>Faça parte do time que dá voz ao oceano. Sua ajuda faz a diferença!</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/Imagens/Tartaruga 1 - redes de pesca.webp" alt="Doações">
+        <h3>Doe e Apoie</h3>
+        <p>Contribua para a preservação marinha. Toda ajuda é fundamental!</p>
+      </div>
+    </section>
+  </main>
+  <!-- Rodapé -->
+  <footer>
+    <p>🌊 Nalu Project – A Voz do Oceano | Todos os direitos reservados © 2025</p>
+  </footer>
+
+  <script>
+    // Menu responsivo (hambúrguer)
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('#menu ul');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('ativo');
+    });
+  </script>
+</body>
+</html>

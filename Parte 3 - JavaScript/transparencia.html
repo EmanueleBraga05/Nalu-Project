@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nalu Project – A Voz do Oceano</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/formulario.js"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    /* --- ESTILO DO CABEÇALHO --- */
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* --- CONTEÚDO PRINCIPAL --- */
+    main {
+      margin-top: 50px; /* espaço entre header e gráfico */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 80vh;
+    }
+
+    #grafico {
+      background-color: #eaf8f8;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 700px;
+      width: 90%;
+    }
+
+    #grafico h2 {
+      margin-bottom: 20px;
+      color: #004d4d;
+    }
+
+    canvas {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* --- RODAPÉ --- */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0077b6;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ✅ CABEÇALHO -->
+   <header>
+    <div class="logo-container">
+  <img src="assets\Imagens\logo.png" alt="Logo Nalu Project" class="logo">
+  <h1 class="titulo-site">Nalu Project</h1>
+</div>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="voluntariado.html">Voluntariado</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li></li><a href="transparencia.html">Transparência</a></li>
+        <li><a href="contato.html">Contato</a></li><li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ✅ CONTEÚDO PRINCIPAL -->
+  <main>
+    <section id="grafico">
+      <h2>Resíduos recolhidos pelo Nalu Project</h2>
+      <canvas id="graficoPizza"></canvas>
+    </section>
+  </main>
+  <body>
+  <!-- conteúdo da página -->
+  <canvas id="graficoPizza"></canvas>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Script do gráfico -->
+  <script>
+    const ctx = document.getElementById('graficoPizza').getContext('2d');
+
+    new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ['Plástico', 'Metal', 'Vidro', 'Papel', 'Outros'],
+        datasets: [{
+          data: [45, 20, 15, 10, 10],
+          backgroundColor: [
+            '#36A2EB', '#FFCE56', '#4BC0C0', '#FF6384', '#9966FF'
+          ]
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom' },
+          title: {
+            display: true,
+            text: 'Distribuição dos tipos de resíduos'
+          }
+        }
+      }
+    });
+  </script>
+</body>
+
+
+  <!-- ✅ RODAPÉ -->
+<footer>
+    <p>© 2025 Nalu Project</p>
+  </footer>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nalu Project – A Voz do Oceano</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/formulario.js"></script>
+
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo-container">
+  <img src="assets\Imagens\logo.png" alt="Logo Nalu Project" class="logo">
+  <h1 class="titulo-site">Nalu Project</h1>
+</div>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="voluntariado.html">Voluntariado</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li></li><a href="transparencia.html">Transparência</a></li>
+        <li><a href="contato.html">Contato</a></li><li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form>
+      <fieldset>
+        <h1>Seja Voluntário</h1>
+        <legend>Cadastro de Voluntário</legend>
+        <label>Nome: <input type="text" required></label><br>
+        <label>E-mail: <input type="email" required></label><br>
+        <label>CPF: <input type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00"></label><br>
+        <label>Telefone: <input type="tel" placeholder="(00) 00000-0000"></label><br>
+        <label>Disponibilidade:
+          <select>
+            <option>Fins de semana</option>
+            <option>Durante a semana</option>
+          </select>
+        </label><br>
+        <label>Habilidades:
+          <textarea></textarea>
+        </label><br>
+        <button type="submit">Enviar</button>
+        <img src="assets\Imagens/Voluntários.jpeg" alt="Logo Nalu Project" class="logo">
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Nalu Project</p>
+  </footer>
+</body>
+</html>
+
