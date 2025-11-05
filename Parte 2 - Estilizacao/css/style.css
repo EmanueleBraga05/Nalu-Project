@@ -1,0 +1,166 @@
+/* 🎨=============================
+   SISTEMA DE DESIGN - NALU PROJECT
+===============================*/
+
+/* 🎨 Design Base */
+:root {
+  --azul-escuro: #03045e;
+  --azul-medio: #102361;
+  --azul-claro: #00b4d8;
+  --verde-agua: #90e0ef;
+  --branco: #ffffff;
+  --cinza: #1f9fbe;
+}
+
+/* Corpo */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: var(--cinza);
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--azul-medio);
+  color: var(--branco);
+  padding: 10px 30px;
+}
+
+header img.logo {
+  width: 100px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+header a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: var(--verde-agua);
+}
+
+/* Botão menu mobile */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../assets/imagens/oceano.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--azul-claro);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: var(--verde-agua);
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: var(--azul-escuro);
+  margin: 10px 0;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--azul-escuro);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header ul {
+    display: none;
+    flex-direction: column;
+    background-color: var(--azul-medio);
+    padding: 20px;
+  }
+
+  header ul.ativo {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+/* Logo + nome da ONG */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container .logo {
+  width: 60px; /* tamanho da logo */
+  height: auto;
+}
+
+.titulo-site {
+  font-size: 1.5rem;
+  color: var(--branco);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.titulo-site {
+  background: linear-gradient(to right, var(--verde-agua), var(--azul-claro));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
